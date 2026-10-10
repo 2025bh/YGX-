@@ -1,0 +1,4 @@
+interface:
+  display_name: "家具短视频制作"
+  short_description: "多项目账号隔离、素材与文案匹配、配音换音色和独立字幕剪映交付"
+  default_prompt: "使用 $produce-furniture-video，先核对项目账号和本机素材，再按规则制作可编辑的家具短视频审片稿。"
