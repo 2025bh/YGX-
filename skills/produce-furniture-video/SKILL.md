@@ -34,4 +34,4 @@ python <本Skill目录>/scripts/test_validate_plan.py
 
 给唯一当前版本的MP4、原创/用户文案、镜头清单、可编辑剪映草稿及收齐素材的工程包；需要时附封面和发布文案。明确“文件生成、索引登记、首页可见、原生编辑保存重开、用户认可、正式发布”各自状态。未经确认不自动发布，不删除旧产物。
 
-同事移交或新环境接入时，将[项目方案与规则文档](../../docs/colleague-handoff.md)交给接收方；若只安装了Skill子目录，则从[仓库交接文档](https://github.com/2025bh/YGX-/blob/main/docs/colleague-handoff.md)读取，或由发送方附上该文件。除此之外，本Skill的执行规则与资源全部随子目录安装，不要求访问作者电脑。
+同事移交或新环境接入时，将[项目方案与规则文档](https://github.com/2025bh/YGX-/blob/main/docs/colleague-handoff.md)交给接收方，或由发送方附上该文件。本Skill的执行规则与资源全部随子目录安装；交接文档是业务介绍，不是运行依赖，不要求访问作者电脑。
