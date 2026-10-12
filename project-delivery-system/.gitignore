@@ -1,0 +1,12 @@
+demo-data/
+demo-uploads/
+data/
+uploads/
+test-results/
+node_modules/
+*.log
+.env
+.env.*
+!.env.example
+*.pem
+*.key

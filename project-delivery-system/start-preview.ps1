@@ -1,0 +1,9 @@
+$ErrorActionPreference = 'Stop'
+$root = $PSScriptRoot
+$env:YGX_MODE = 'demo'
+$env:YGX_PORT = '8299'
+$env:YGX_DEMO_NAMESPACE = 'preview'
+$node = (Get-Command node).Source
+$log = Join-Path $root ('preview-' + (Get-Date -Format 'yyyyMMdd-HHmmss'))
+$process = Start-Process -FilePath $node -ArgumentList 'server.js' -WorkingDirectory $root -WindowStyle Hidden -RedirectStandardOutput "$log.log" -RedirectStandardError "$log.err.log" -PassThru
+Write-Output "预览进程 PID=$($process.Id)，实际端口见 $log.log；默认 http://localhost:8299/"

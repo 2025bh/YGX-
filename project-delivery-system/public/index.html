@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>忆古轩 · 项目管理系统</title>
+<meta name="description" content="忆古轩家居项目全流程管理系统：销售成交 → 设计 → 生产 → 出货审批 → 安装 → 售后">
+
+<!-- PWA：允许添加到主屏幕 -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0f172a">
+
+<!-- iOS 添加到主屏幕 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="忆古轩">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>忆</text></svg>">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="workflow.css">
+</head>
+<body>
+<div class="demo-banner">v2.2 隔离试用 · 演示数据 · 未接入飞书生产系统</div>
+<div id="app"><div class="boot-loading">系统加载中…</div></div>
+<script src="js/00-icons.js"></script>
+<script src="js/01-core.js"></script>
+<script src="js/02-components.js"></script>
+<script src="js/03-views.js"></script>
+<script src="js/04-project.js"></script>
+<script src="js/05-modules.js"></script>
+<script src="js/06-boot.js"></script>
+<script src="js/07-staff.js"></script>
+<script src="js/08-datepicker.js"></script>
+<script src="js/09-fields.js"></script>
+<script src="js/10-nodeform.js"></script>
+<script>
+/* PWA：注册 Service Worker。
+   仅用于缓存界面壳（HTML/CSS/JS/图标），让断网时也能打开界面；
+   所有 /api/ 请求一律走网络，不做缓存，避免读到过期数据。
+   非 HTTPS 或 file:// 环境会自动跳过，不影响本地演示。 */
+if ('serviceWorker' in navigator && location.protocol === 'https:') {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js').catch(function () { /* 注册失败不影响使用 */ });
+  });
+}
+</script>
+</body>
+</html>
