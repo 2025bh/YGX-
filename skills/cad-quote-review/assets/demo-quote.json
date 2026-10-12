@@ -1,0 +1,10 @@
+{
+  "data_classification": "SYNTHETIC",
+  "description": "人工构造的模拟数据，名称、材料、尺寸与单价均非客户数据；不能用于实际报价",
+  "customer_type": "C",
+  "rows": [
+    {"figure":"1","region":"演示区域A","name":"演示整柜","height":2100,"length":1800,"width":600,"quantity":1,"unit":"㎡","material":"演示材料","price":null,"risk":"中","calc_mode":"rect"},
+    {"figure":"1","region":"演示区域A","name":"演示见光板","height":2100,"length":600,"width":null,"quantity":1,"unit":"㎡","material":"演示材料","price":null,"risk":"中","calc_mode":"rect"},
+    {"figure":"2","region":"演示区域B","name":"演示书桌","height":780,"length":2400,"width":550,"quantity":1,"unit":"米","material":"演示材料","price":null,"risk":"中","calc_mode":"length"}
+  ]
+}

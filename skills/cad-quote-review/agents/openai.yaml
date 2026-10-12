@@ -1,0 +1,4 @@
+interface:
+  display_name: "CAD报价识别与纠错"
+  short_description: "以同版CAD证据复核木作报价与工程量，记录老师傅纠错并制作本地审核平台"
+  default_prompt: "用 $cad-quote-review 按当前项目规则复核CAD部件和工程量，再逐项对比并保存纠错证据。"
