@@ -1,0 +1,10 @@
+{
+  "schema_version": "public-demo-1",
+  "rules": [
+    {"rule_id":"REVIEW-001","rule_name":"先配对再对比","status":"ACTIVE","business_explanation":"不以名字或尺寸相近直接判断同一个部件，歧义需确认。"},
+    {"rule_id":"REVIEW-002","rule_name":"延米与面积独立","status":"ACTIVE","business_explanation":"已确认按米计价的项目只用总长乘每米单价。"},
+    {"rule_id":"REVIEW-003","rule_name":"缺单价金额留空","status":"ACTIVE","business_explanation":"工程量有据即计算，缺单价不写零金额。"},
+    {"rule_id":"REVIEW-004","rule_name":"原始精度计价","status":"ACTIVE","business_explanation":"显示两位不改变计算用原始精度。"},
+    {"rule_id":"REVIEW-005","rule_name":"规则先保存为案例","status":"ACTIVE","business_explanation":"确认项目纠错不自动推广为通用计价规则，C/B端口径分开。"}
+  ]
+}

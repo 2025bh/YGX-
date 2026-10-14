@@ -1,0 +1,6 @@
+export type Quote = {figure:string; region:string; name:string; unit:string; height?:number|null; length?:number|null; width?:number|null; thickness?:number|null; quantity:number|null; area?:number|null; total_length?:number|null; material:string; price?:number|null; amount?:number|null; risk:string; calc_mode:string; minimum_area?:number|null; note?:string; images?:string[]; pdf?:string; bounds?:number[]; frame_index?:number; frame_handle?:string; handles?:string[]; source_evidence?:unknown; excluded?:boolean; calculation?:string};
+export type Row = {id:string; project_id:string; ai:Quote|null; reference:Quote|null; adopted:Quote; status:string; version:number; diffs:string[]};
+export type Project = {id:string;name:string;customer_type:string;demo:number;total:number;reviewed:number;differences:number;high_risk:number;has_reference:number;thumbnail?:string;rows?:Row[];snapshots?:{id:string;kind:string;filename:string;sha:string;created:number}[]};
+export type Mark = {type:'rect'|'arrow';x:number;y:number;x2:number;y2:number};
+export type Evidence = {asset:string;name?:string;mime?:string;marks?:Mark[];description?:string;row_id?:string;row_version?:number};
+export type User = {id:string;name:string;role:string};
