@@ -1,0 +1,5 @@
+interface:
+  display_name: "轻量多智能体协作"
+  short_description: "项目级总控、最小交接、单一执行权和按需增量复盘"
+  default_prompt: "使用 $orchestrate-multi-agent-work 查看项目目标、负责人、依赖与下一步，以最少上下文推进任务；复盘和共享按我的明确范围执行。"
+

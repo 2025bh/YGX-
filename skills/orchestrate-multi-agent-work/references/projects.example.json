@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_id": "sample-workspace",
+  "timezone": "Asia/Shanghai",
+  "max_changed_tasks": 8,
+  "excluded_review_threads": [],
+  "rule_files": [],
+  "projects": [
+    {"id":"demo","name":"示例项目","domains":["示例业务"],"review_frequency":"weekly","priority":"normal"},
+    {"id":"unassigned","name":"待归属","domains":[],"review_frequency":"weekly","priority":"normal"}
+  ],
+  "dependencies": {},
+  "shared_results": {}
+}
+
