@@ -1,0 +1,5 @@
+interface:
+  display_name: 家具素材审核剪辑
+  short_description: 手机素材净化、文案匹配和粗剪
+  default_prompt: 使用家具素材审核剪辑流程处理这批本地手机视频；先整理素材，提供文案后再匹配并生成可审核粗剪。
+
