@@ -1,11 +1,13 @@
 # YGX 企业 AI 技能与项目库
 
-当前收录 **2 个 Skill**、**2 套项目系统源码**。先按工作目标选择入口；每个 Skill 都有独立说明和完整规则。
+当前收录 **3 个 Skill**、**2 套项目系统源码**。先按工作目标选择入口；每个 Skill 都有独立说明和完整规则。
 
 ## 技能目录
 
 1. [CAD报价识别与纠错](skills/cad-quote-review/README.md)：核实家具CAD部件、尺寸与工程量，对比人工报价并保存纠错证据，支持本地审核平台制作。
 2. [多窗口项目总控与增量复盘](skills/orchestrate-multi-agent-work/README.md)：管理项目归属、优先级、负责人和最小交接，按需复盘变化并准备同事脱敏进度包。
+
+3. [家具素材审核剪辑](skills/furniture-review-cut/README.md)：整理手机直出素材、建立已验证片段库、按文案匹配画面并生成可审核粗剪。
 
 ---
 
@@ -45,6 +47,22 @@ skills/orchestrate-multi-agent-work 完整目录。
 ```
 
 ---
+
+## 技能 03：家具素材审核剪辑
+
+**什么时候用：** 手机直出素材需要扫描、切片、人工筛选，并按家具文案匹配画面和生成低清粗剪时使用。
+
+**会得到什么：** 原片登记、精选片段库、文案节拍、候选匹配、异常清单、剪映朗读稿和简单字幕 demo。技能不会删除原片、上传素材或自动发布。
+
+[打开技能说明](skills/furniture-review-cut/README.md) · [阅读完整规则](skills/furniture-review-cut/SKILL.md)
+
+复制给同事的Agent：
+
+```text
+请从 GitHub 仓库 2025bh/YGX- 安装
+skills/furniture-review-cut 完整目录。
+先读取 README.md 和 SKILL.md；我会提供本地手机原片，匹配成片时再提供完整文案。
+```
 
 ## 项目源码：忆古轩项目交付系统
 
